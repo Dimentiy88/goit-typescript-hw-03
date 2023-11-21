@@ -39,7 +39,7 @@ abstract class House {
 class MyHouse extends House {
   openDoor(key: Key): void {
     if (key.getSignature() === this.key.getSignature()) {
-      this.door === true;
+      this.door = true;
       console.log("Двері відкріті.");
     } else {
       console.log("Двері закриті.");
